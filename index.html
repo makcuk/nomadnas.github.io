@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NomadNAS — Capture. Backup. Continue.</title>
+  <meta name="description" content="NomadNAS is an autonomous, night-friendly field backup station for drone pilots, photographers, and expedition filmmakers.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="brand-wrap">
+        <span class="brand">NOMADNAS</span>
+        <span class="motto">CAPTURE. BACKUP. CONTINUE.</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+        <a href="#build-your-own">Build Your Own</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">Autonomous Field NAS</span>
+        <h1>Backup Drone &amp; Camera Cards Without a Laptop</h1>
+        <p class="hero-lead">
+          Insert your SD or microSD card, tap <strong>Start Copy</strong>, verify your footage right on the
+          night-friendly touchscreen, and offload later to your home NAS or cloud — anywhere in the field.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#order">Order Rugged Unit</a>
+          <a class="btn btn-olive" href="#build-your-own">Build Your Own</a>
+          <a class="btn" href="#about">Explore Features</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/background.png" alt="NomadNAS Tactical Field Banner">
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">01 / About the Project</div>
+        <h2>Engineered for Airfields, Trailheads &amp; Night Shoots</h2>
+        <p class="section-sub">
+          NomadNAS turns a rugged Raspberry Pi 4 cyberdeck or an old Debian touchscreen laptop into a dedicated
+          media-ingestion appliance with zero harsh glare and one-tap operation.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Dual-Slot Card Ingestion</h3>
+          <p>Auto-detects SD &amp; microSD cards, tracks live rsync progress, and offers an optional <em>Clean card after sync</em> switch so you can get right back in the air.</p>
+        </div>
+        <div class="card">
+          <h3>Built-in Media Browser</h3>
+          <p>Browse NVMe storage directly on the device: scrub MP4/MOV clips, preview DNG/RAW/JPEG photos, and view drone SRT telemetry.</p>
+        </div>
+        <div class="card">
+          <h3>NAS &amp; Cloud Offload</h3>
+          <p>Sync or Move footage to SMB/Samba NAS, Amazon S3, Google Drive, Azure Blob, or local USB drives — with optional automatic local cleanup after verified transfer.</p>
+        </div>
+        <div class="card">
+          <h3>Tri-State Wi-Fi &amp; AP</h3>
+          <p>Switch cleanly between <strong>OFF</strong>, <strong>AP Mode</strong> (creates its own NomadNAS hotspot), and <strong>Client Mode</strong> with an on-screen touch keyboard.</p>
+        </div>
+        <div class="card">
+          <h3>QR Setup Mode</h3>
+          <p>Tap the gear icon to launch a password-protected mobile Web UI. Scan the QR code with your phone to paste cloud keys and test bucket/share access live.</p>
+        </div>
+        <div class="card">
+          <h3>OTA Updates</h3>
+          <p>Checks GitHub automatically when online and updates cleanly in-place via <code>ansible-pull</code> with one tap.</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="shot">
+          <img src="assets/main_screen.png" alt="NomadNAS Main Screen">
+          <div class="shot-cap">Main tactical screen &amp; SD card stations</div>
+        </div>
+        <div class="shot">
+          <img src="assets/copy_progress.png" alt="NomadNAS Copy Progress">
+          <div class="shot-cap">Live rsync card ingestion &amp; progress</div>
+        </div>
+        <div class="shot">
+          <img src="assets/nvme_browser.png" alt="NomadNAS Storage Browser">
+          <div class="shot-cap">Built-in NVMe browser &amp; media preview</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">02 / Ready-to-Fly Hardware</div>
+        <h2>Order the Rugged Field Unit</h2>
+        <p class="section-sub">
+          Prefer a turnkey, weather-sealed Pelican-style appliance tested and ready out of the box?
+        </p>
+      </div>
+
+      <div class="order-layout">
+        <div class="order-photos">
+          <img src="assets/rugged_build_angle.jpg" alt="NomadNAS Rugged Unit Isometric View">
+          <img src="assets/rugged_build_front.jpg" alt="NomadNAS Rugged Unit Front View">
+        </div>
+        <div>
+          <span class="pill">Reference Rugged Edition</span>
+          <h3 style="margin:0 0 8px; color:var(--amber); font-size:1.4rem;">NomadNAS Apache 1800 Field Rig</h3>
+          <p style="margin:0; color:var(--text);">
+            Custom CNC-cut brushed aluminum faceplate (acting as a passive heatsink) inside an IP65 weatherproof case,
+            built around a Raspberry Pi 4 and high-speed NVMe storage.
+          </p>
+          <ul class="spec-list">
+            <li><strong>Storage:</strong> 1 TB Crucial P310 NVMe SSD (USB 3.2 Gen 2 UASP)</li>
+            <li><strong>Display:</strong> 7&Prime; 1024&times;600 IPS capacitive touchscreen</li>
+            <li><strong>Battery:</strong> 82.88 Wh (22,400 mAh) pack &mdash; 8&ndash;12+ hrs runtime</li>
+            <li><strong>Ingestion:</strong> Integrated dual SD / microSD high-speed reader</li>
+            <li><strong>I/O:</strong> Panel-mount Gigabit RJ45 + external DC barrel charging port</li>
+          </ul>
+          <a class="btn btn-primary btn-disabled" href="#order" aria-disabled="true" onclick="return false;">
+            Order on Etsy &mdash; TBD (Coming Soon)
+          </a>
+          <div class="tbd-note">
+            Etsy listing link is a placeholder &mdash; hardware batch availability and pricing will be posted here soon.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="build-your-own">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">03 / Open Source DIY</div>
+        <h2>Build Your Own NomadNAS</h2>
+        <p class="section-sub">
+          NomadNAS is open-source software. Choose between repurposing a rugged/touchscreen Debian laptop or fabricating
+          the custom SBC cyberdeck.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Option A: Debian Laptop (e.g. Toughbook CF-31 / ThinkPad)</h3>
+          <p>Turn an existing touchscreen laptop with a built-in SD slot and battery into a zero-fabrication field NAS.</p>
+          <ul class="step-list">
+            <li><span class="step-num">1.</span> Install Debian 12 (Bookworm) minimal / x86_64 <span class="placeholder-tag">TBD</span></li>
+            <li><span class="step-num">2.</span> Run the NomadNAS Ansible setup playbook <span class="placeholder-tag">TBD</span></li>
+            <li><span class="step-num">3.</span> Configure lid-close survival &amp; ACPI battery card <span class="placeholder-tag">TBD</span></li>
+            <li><span class="step-num">4.</span> Open Setup Mode QR on your phone to add S3/SMB/Drive <span class="placeholder-tag">TBD</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Option B: Custom Rugged SBC (Raspberry Pi 4)</h3>
+          <p>Build the exact Apache 1800 cyberdeck using our open-source Bill of Materials, CAD, and 3D-print files.</p>
+          <ul class="step-list">
+            <li><span class="step-num">1.</span> Source BOM parts &amp; cut/print frame (<code>.dxf</code>, <code>.stl</code>, <code>.scad</code>) <span class="placeholder-tag">TBD</span></li>
+            <li><span class="step-num">2.</span> Flash Raspberry Pi OS Lite 64-bit &amp; mount NVMe at <code>/storage</code> <span class="placeholder-tag">TBD</span></li>
+            <li><span class="step-num">3.</span> Provision UI, Wi-Fi AP &amp; Plymouth splash via Ansible <span class="placeholder-tag">TBD</span></li>
+            <li><span class="step-num">4.</span> Scan Setup Mode QR to test &amp; save your backup endpoints <span class="placeholder-tag">TBD</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <strong style="color:var(--amber); letter-spacing:1.5px;">NOMADNAS</strong> &bull; Capture. Backup. Continue.
+      <div style="margin-top:6px;">Open-source field backup software &amp; hardware reference. Repository link coming soon.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
